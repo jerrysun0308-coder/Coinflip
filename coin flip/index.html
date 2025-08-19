@@ -1,0 +1,18 @@
+<h1> Coinflip </h1>
+<button onclick="sayflipping()" style="margin-bottom:30px"> Flip coin </button>
+<img id="coin" src="coin.jpg" style="margin-top:10px;">
+<script>
+function sayflipping() {
+alert("flipping!");
+let rand=Math.floor(Math.random()*2);
+if (rand===0) {
+alert("heads!");
+document.getElementById("coin").src="coin.jpg";
+} else {
+alert("tails!");
+ document.getElementById("coin").src = "tails.jpg";
+}
+}
+
+
+</script>
